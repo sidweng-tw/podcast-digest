@@ -70,5 +70,4 @@ jobs:
         if: steps.digest.outputs.done != '0' && inputs.dryrun != true
         env:
           SUMMARY_FIRE_TOKEN: ${{ secrets.SUMMARY_FIRE_TOKEN }}
-          SUMMARY_ROUTINE_ID: ${{ secrets.SUMMARY_ROUTINE_ID }}
         run: python fire_summary.py

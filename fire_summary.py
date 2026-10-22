@@ -1,7 +1,7 @@
 """逐字稿全部寄出後，直接觸發雲端「Podcast 每日摘要」排程任務。
 
 token 在 claude.ai/code/routines 的該任務編輯頁產生，存成 GitHub secret SUMMARY_FIRE_TOKEN。
-任務 ID 也放在 secret SUMMARY_ROUTINE_ID（公開 repo 不寫死在程式裡）。
+任務 ID 不是機密（沒有 token 無法觸發），直接寫在程式裡。
 此 API 沒有防重複：只在連線錯誤、429、5xx 時重試，2xx 之後絕不重送。
 """
 import json
@@ -12,9 +12,10 @@ import urllib.error
 import urllib.request
 
 token = os.environ.get("SUMMARY_FIRE_TOKEN", "").strip()
-routine = os.environ.get("SUMMARY_ROUTINE_ID", "").strip()
-if not token or not routine:
-    print("::error::缺少 SUMMARY_FIRE_TOKEN 或 SUMMARY_ROUTINE_ID，無法觸發摘要")
+ROUTINE_ID = "trig_01FFWtiBxo8hsC5BfCxF38Ps"  # 雲端排程「Podcast 每日摘要」
+routine = os.environ.get("SUMMARY_ROUTINE_ID", "").strip() or ROUTINE_ID
+if not token:
+    print("::error::缺少 secret SUMMARY_FIRE_TOKEN，無法觸發摘要")
     sys.exit(1)
 
 url = f"https://api.anthropic.com/v1/claude_code/routines/{routine}/fire"
