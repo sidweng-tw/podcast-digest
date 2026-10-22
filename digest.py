@@ -185,12 +185,10 @@ def main():
 
     def process(ep):
         with tempfile.TemporaryDirectory() as tmp:
-            raw, wav = f"{tmp}/a", f"{tmp}/a.wav"
+            raw = f"{tmp}/a"
             t0 = time.time()
             subprocess.run(["curl", "-sSfL", "--retry", "3", "-o", raw, ep["audio"]], check=True)
-            subprocess.run(["ffmpeg", "-loglevel", "error", "-i", raw, "-ac", "1", "-ar", "16000", wav],
-                           check=True)
-            text, sec = transcribe(wav)
+            text, sec = transcribe(raw)  # faster-whisper 內建 PyAV 解碼，不需 ffmpeg
             n = send(ep, text, sec)
             print(f"完成 {ep['show']}｜{ep['title']}：音檔 {sec / 60:.0f} 分，耗時 {(time.time() - t0) / 60:.1f} 分，信件 {n} 字元")
         state[ep["show"]]["guids"].append(ep["guid"])

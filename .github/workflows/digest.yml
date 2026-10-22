@@ -30,9 +30,8 @@ jobs:
           cache: pip
 
       - name: 安裝套件
-        run: |
-          pip install -q -r requirements.txt
-          sudo apt-get install -y -qq ffmpeg > /dev/null
+        # 不裝 apt 的 ffmpeg：10/22 首跑時 apt 卡了 21 分鐘；音檔由 faster-whisper 內建的 PyAV 解碼
+        run: pip install -q -r requirements.txt
 
       - name: 快取 Whisper 模型
         uses: actions/cache@v4
