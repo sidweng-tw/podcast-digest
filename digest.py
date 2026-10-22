@@ -39,6 +39,9 @@ ONLY = os.environ.get("ONLY", "")          # 測試用：只處理名稱含此�
 LIMIT = int(os.environ.get("LIMIT", "0"))  # 測試用：最多處理幾集
 
 PROMPT = "以下是台灣財經、科技節目的逐字稿，使用繁體中文與台灣用語，包含台積電、輝達、聯發科等公司名稱。"
+# 常被聽錯的專有名詞，餵給 Whisper 當提示詞（hotwords）。Sid 糾正過的名稱請加在這裡。
+HOTWORDS = ("台積電 輝達 聯發科 鴻海 廣達 緯創 日月光 大立光 旺宏 欣興 景碩 欣銓 南亞科 華邦電 "
+            "長鑫存儲 長江存儲 三星 SK海力士 美光 英特爾 超微 CoWoS HBM CPO ABF")
 
 
 def load_state():
@@ -131,8 +134,8 @@ def transcribe(path):
     if _model is None:
         _model = WhisperModel("large-v3-turbo", device="cpu", compute_type="int8",
                               cpu_threads=os.cpu_count() or 2)
-    segs, info = _model.transcribe(path, language="zh", vad_filter=True,
-                                   initial_prompt=PROMPT, condition_on_previous_text=False)
+    segs, info = _model.transcribe(path, language="zh", vad_filter=True, initial_prompt=PROMPT,
+                                   hotwords=HOTWORDS, condition_on_previous_text=False)
     lines, last_mark = [], -600
     for s in segs:
         if s.start - last_mark >= 300:  # 每 5 分鐘插一個時間標記，方便回頭對照
