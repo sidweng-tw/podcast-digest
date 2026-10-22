@@ -3,7 +3,6 @@ name: podcast-digest
 on:
   schedule:
     - cron: '0 9 * * *'     # 台北每天 17:00；GitHub 排程常延遲約 10 分鐘
-    - cron: '15 11 * * *'   # 台北 19:15 補跑：上一輪沒做完或失敗的集數
   workflow_dispatch:
     inputs:
       dryrun:
@@ -21,7 +20,7 @@ concurrency:
 jobs:
   digest:
     runs-on: ubuntu-latest
-    timeout-minutes: 240
+    timeout-minutes: 360
     steps:
       - uses: actions/checkout@v4
 
@@ -42,13 +41,13 @@ jobs:
           key: whisper-large-v3-turbo
 
       - name: 偵測、轉錄、寄逐字稿
+        id: digest
         env:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           MAIL_TO: ${{ secrets.MAIL_TO }}
           DRYRUN: ${{ inputs.dryrun && '1' || '0' }}
-          # 17:00 那輪最多轉 140 分鐘，19:15 補跑最多 45 分鐘，趕在 20:38 摘要排程之前收工；趕不上的集數併入隔天摘要
-          TIME_BUDGET_MIN: ${{ github.event.schedule == '15 11 * * *' && '45' || '140' }}
+          TIME_BUDGET_MIN: '300'
         run: python digest.py
 
       - name: 存已處理清單
@@ -59,3 +58,17 @@ jobs:
           git add state/
           git diff --cached --quiet || git commit -m "已處理集數 $(TZ=Asia/Taipei date +%F)"
           for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
+
+      # 摘要時間以 21:00 為參考：早轉完就等到 20:40 再觸發；晚轉完就轉完立刻觸發，不拖到隔天
+      - name: 等到台北 20:40
+        if: github.event_name == 'schedule' && steps.digest.outputs.done != '0'
+        run: |
+          now=$(TZ=Asia/Taipei date +%s); target=$(TZ=Asia/Taipei date -d '20:40' +%s)
+          if [ "$now" -lt "$target" ]; then echo "等 $(( (target-now)/60 )) 分鐘"; sleep $((target-now)); fi
+
+      - name: 觸發雲端摘要
+        if: steps.digest.outputs.done != '0' && inputs.dryrun != true
+        env:
+          SUMMARY_FIRE_TOKEN: ${{ secrets.SUMMARY_FIRE_TOKEN }}
+          SUMMARY_ROUTINE_ID: ${{ secrets.SUMMARY_ROUTINE_ID }}
+        run: python fire_summary.py

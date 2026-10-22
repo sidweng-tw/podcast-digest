@@ -11,7 +11,7 @@
   GMAIL_USER / GMAIL_APP_PASSWORD / MAIL_TO   寄信用（secrets）
   DRYRUN=1      只偵測、不轉錄不寄信
   MAX_AGE_H     第一次執行（或某節目第一次出現）只收這麼多小時內的集數，預設 36
-  TIME_BUDGET_MIN  本次轉錄總時間上限（分鐘），超過就留給下次，預設 150
+  TIME_BUDGET_MIN  本次轉錄總時間上限（分鐘），預設 300（GitHub 單次執行上限 6 小時）
 """
 import calendar
 import json
@@ -32,7 +32,7 @@ ROOT = Path(__file__).parent
 FEEDS = json.loads((ROOT / "feeds.json").read_text(encoding="utf-8"))
 STATE = ROOT / "state" / "seen.json"
 MAX_AGE_H = float(os.environ.get("MAX_AGE_H", "36"))
-TIME_BUDGET = float(os.environ.get("TIME_BUDGET_MIN", "150")) * 60
+TIME_BUDGET = float(os.environ.get("TIME_BUDGET_MIN", "300")) * 60
 DRYRUN = os.environ.get("DRYRUN") == "1"
 START = time.time()
 ONLY = os.environ.get("ONLY", "")          # 測試用：只處理名稱含此字串的節目
@@ -183,30 +183,41 @@ def main():
         return
     save_state(state)  # 先存「首次基準」
 
-    done = failed = 0
-    for ep in todo:
-        if time.time() - START > TIME_BUDGET:
-            print(f"已達本次時間上限，剩 {len(todo) - done - failed} 集留給下次")
-            break
+    def process(ep):
         with tempfile.TemporaryDirectory() as tmp:
             raw, wav = f"{tmp}/a", f"{tmp}/a.wav"
             t0 = time.time()
-            try:
-                subprocess.run(["curl", "-sSfL", "--retry", "3", "-o", raw, ep["audio"]], check=True)
-                subprocess.run(["ffmpeg", "-loglevel", "error", "-i", raw, "-ac", "1", "-ar", "16000", wav],
-                               check=True)
-                text, sec = transcribe(wav)
-                n = send(ep, text, sec)
-            except Exception as ex:
-                failed += 1
-                print(f"::warning::{ep['show']}｜{ep['title']} 失敗：{type(ex).__name__}，下次重試")
-                continue
+            subprocess.run(["curl", "-sSfL", "--retry", "3", "-o", raw, ep["audio"]], check=True)
+            subprocess.run(["ffmpeg", "-loglevel", "error", "-i", raw, "-ac", "1", "-ar", "16000", wav],
+                           check=True)
+            text, sec = transcribe(wav)
+            n = send(ep, text, sec)
             print(f"完成 {ep['show']}｜{ep['title']}：音檔 {sec / 60:.0f} 分，耗時 {(time.time() - t0) / 60:.1f} 分，信件 {n} 字元")
         state[ep["show"]]["guids"].append(ep["guid"])
         state[ep["show"]]["guids"] = state[ep["show"]]["guids"][-50:]
         save_state(state)
-        done += 1
-    print(f"本次完成 {done} 集，失敗 {failed} 集")
+
+    done, retry = 0, []
+    for attempt, queue in ((1, todo), (2, None)):
+        if attempt == 2:
+            queue, retry = retry, []
+            if queue:
+                print(f"重試失敗的 {len(queue)} 集")
+        for ep in queue:
+            if time.time() - START > TIME_BUDGET:
+                print(f"::warning::已達時間上限，剩下的集數留給下次")
+                break
+            try:
+                process(ep)
+                done += 1
+            except Exception as ex:
+                print(f"::warning::{ep['show']}｜{ep['title']} 第 {attempt} 次失敗：{type(ex).__name__}")
+                retry.append(ep)
+    print(f"本次完成 {done} 集，失敗 {len(retry)} 集")
+    out = os.environ.get("GITHUB_OUTPUT")
+    if out:
+        with open(out, "a") as f:
+            f.write(f"done={done}\nfailed={len(retry)}\n")
 
 
 if __name__ == "__main__":
