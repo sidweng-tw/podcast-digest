@@ -12,7 +12,7 @@ import urllib.error
 import urllib.request
 
 token = os.environ.get("SUMMARY_FIRE_TOKEN", "").strip()
-ROUTINE_ID = "trig_01FFWtiBxo8hsC5BfCxF38Ps"  # 雲端排程「Podcast 每日摘要」
+ROUTINE_ID = "trig_01RYoLGEPAbJmvDv2fcvreSm"  # 雲端任務「Podcast 摘要（轉錄完成觸發）」
 routine = os.environ.get("SUMMARY_ROUTINE_ID", "").strip() or ROUTINE_ID
 if not token:
     print("::error::缺少 secret SUMMARY_FIRE_TOKEN，無法觸發摘要")
