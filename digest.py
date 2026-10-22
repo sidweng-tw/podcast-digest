@@ -167,9 +167,24 @@ def send(ep, transcript, audio_sec):
                 s.send_message(msg)
             return len(body)
         except Exception as ex:
-            print(f"寄信第 {i + 1} 次失敗：{type(ex).__name__}")
+            print(f"寄信第 {i + 1} 次失敗：{type(ex).__name__} {str(ex)[:200]}")
             time.sleep(20)
     raise RuntimeError("寄信失敗")
+
+
+def check_smtp():
+    """轉錄前先確認能登入 Gmail，避免轉完才發現寄不出去（10/22 首跑即因此白轉 4 集）。"""
+    user = os.environ.get("GMAIL_USER", "").strip()
+    pwd = os.environ.get("GMAIL_APP_PASSWORD", "").replace(" ", "").strip()
+    if not user or not pwd or not os.environ.get("MAIL_TO", "").strip():
+        sys.exit("::error::GMAIL_USER／GMAIL_APP_PASSWORD／MAIL_TO 有空值，請檢查 secrets")
+    print(f"應用程式密碼長度：{len(pwd)}（Gmail 應為 16）")
+    try:
+        with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=ssl.create_default_context()) as s:
+            s.login(user, pwd)
+    except Exception as ex:
+        sys.exit(f"::error::Gmail 登入失敗：{type(ex).__name__} {str(ex)[:200]}")
+    print("Gmail 登入測試通過")
 
 
 def main():
@@ -181,6 +196,8 @@ def main():
     if DRYRUN:
         print("DRYRUN：不轉錄、不寄信、不更新狀態")
         return
+    if todo:
+        check_smtp()
     save_state(state)  # 先存「首次基準」
 
     def process(ep):
