@@ -53,7 +53,8 @@
    "cmtd6ndzk0o4801zraoz42wxc",
    "cmtblaork06q301zc1rxqdw3w",
    "cmt8rriwu15yu01xfd1qw98zp",
-   "cmt5x0axz1lzy01wy01wpaxv8"
+   "cmt5x0axz1lzy01wy01wpaxv8",
+   "cmvjoqc5800xr01ut9l5i0n91"
   ]
  },
  "聽天下": {
@@ -72,7 +73,8 @@
    "973181c1-363c-4a88-ba3c-91d6438b6b06",
    "9171cb6c-c53f-40f1-a70f-e2642f1082e0",
    "16973381-ba8b-4436-b797-5c750a64cb83",
-   "4f09704e-c5bb-461a-835d-ebbbd6645a65"
+   "4f09704e-c5bb-461a-835d-ebbbd6645a65",
+   "3d983c70-7302-467b-a981-51e4d35a3cdf"
   ]
  },
  "沈雲驄說財經": {
@@ -167,7 +169,85 @@
    "cmmnm3l6c1uwq01y96x3n3qoa",
    "cmma521na001g01vs5p5b6nwg",
    "cmlyj75so0ax301w52dn261on",
-   "cmlg2mni517um010ggj4o1ruv"
+   "cmlg2mni517um010ggj4o1ruv",
+   "cmvjn8odl00ve01u5bcx65vob"
+  ]
+ },
+ "美股投資學-財女珍妮": {
+  "guids": [
+   "4c49cd1e-1965-4da0-9a29-880e31fd8c56",
+   "930ae0d6-fd06-400c-8152-9bb85c21a821",
+   "d42bc49c-b56e-4174-bfbe-be1a3806623a",
+   "fb084e8a-bd8d-43e4-a5d8-17409f590cf6",
+   "32538262-5ed2-4790-bfef-14e4589896cb",
+   "220e1c6b-b99d-457b-9f98-7f84f7085a4d",
+   "90282731-9478-4e46-b5f1-6f6571f4ccc4",
+   "a630efe4-5801-43f0-919f-4fd75728aaa8",
+   "6f39f877-dcf1-494c-ab49-2ad3a2218d1b",
+   "5de1d356-c872-4704-ac95-f15b4b112d8a",
+   "459e1965-ee6e-48f9-914c-8f0880b00774",
+   "2f41d2df-0100-4b1f-9fdf-c8553adc0af1",
+   "3fdcc477-33fa-465c-8bca-bd8afa18e6fa",
+   "de715979-3032-4b4a-ac52-562355bbb821",
+   "d14ff2ba-1d9a-4012-8193-d5b9c3d9514b"
+  ]
+ },
+ "The Daily": {
+  "guids": [
+   "b78dd0f2-6aff-4ba1-a74a-e173e58bd7dc",
+   "8a6c0e5d-7aed-4985-a019-75f78a8fc2b0",
+   "177fe27d-cc52-4fad-bc7d-3a2ba67a0949",
+   "e8c36736-f4cd-4ec4-a2a3-160b00977f8d",
+   "9ccd9014-ddf7-4970-91f6-8bd9073646cb",
+   "45a7f05b-0915-41a7-8ceb-9d046acd8cbc",
+   "d9759ebd-1c66-4ffd-907d-f40e391e2a01",
+   "7cf9e5f0-c10d-4707-82c7-eb82d640ffd8",
+   "00fc117b-ac68-403a-a2a6-17074a21e49b",
+   "3123d890-70b4-4b6c-a461-27bb204089fe",
+   "c2a1670f-c52f-4f65-aae8-9fb9605fe30c",
+   "4aff7ca7-d64b-436a-b069-0d39594a1246",
+   "2f51b4e7-6173-4499-9cdd-da57a4d3eadb",
+   "6baab6b1-70a4-4f0c-8031-ed0170be43ea",
+   "f2d5e37f-dc9e-4f9f-bb99-cc20088a43e9"
+  ]
+ },
+ "The Intelligence": {
+  "guids": [
+   "6ad870aa3ad7f68551e3a1a2",
+   "6ad73d9d6a9e2a41c3da84e6",
+   "6ad5db120c6b30397bf5bec0",
+   "6ad1fd1765f99a36ebb7243f",
+   "6ad0f9cc3b418431370456ec",
+   "6ad0aad75f788808a7715263",
+   "6acf5699937a3c900fd4f56f",
+   "6ace029d37f0bd18cc1c7df0",
+   "6accaf58eea51f2aa376ee05",
+   "6ac8c16cd3bfab176e10a5a7",
+   "6ac76b2739599f7c56294e34",
+   "6ac617ea8f90a39dfc5baf52",
+   "6ac4ce946c844f245fde3434",
+   "6ad9d01c3ad7f68551457388",
+   "6adb2359a25058b22ad882a3"
+  ]
+ },
+ "Money Talks": {
+  "guids": [
+   "6a314eda101389aa3d3d7506",
+   "69a57fb2c9e62804ccebed93",
+   "67eecc7bda5ebf87644b83d1",
+   "6621459daf71a4001347678a",
+   "65fc64ce20f30d0016eba287",
+   "65e0c0fabe190800176805e8",
+   "65a95485c270ea001749f41a",
+   "658305107f4b62001525d2c5",
+   "655fabb8155ede00120f7484",
+   "654d291f6b767e0012529796",
+   "653ab15cab9fa20012782385"
+  ]
+ },
+ "The World in Brief": {
+  "guids": [
+   "6adad57a0a858cda449da566"
   ]
  }
 }
