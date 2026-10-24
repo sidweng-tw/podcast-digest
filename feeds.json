@@ -14,5 +14,6 @@
   {"name": "The Intelligence", "feed": "https://access.acast.com/rss/d556eb54-6160-4c85-95f4-47d9f5216c49"},
   {"name": "Money Talks", "feed": "https://feeds.acast.com/public/shows/theeconomistmoneytalks"},
   {"name": "The World in Brief", "feed": "https://access.acast.com/rss/theeconomistmorningbriefing/default"},
-  {"name": "All-In Podcast", "feed": "https://allinchamathjason.libsyn.com/rss"}
+  {"name": "All-In Podcast", "feed": "https://allinchamathjason.libsyn.com/rss"},
+  {"name": "Transistor Radio (SemiAnalysis)", "feed": "https://anchor.fm/s/7b86e554/podcast/rss"}
 ]
