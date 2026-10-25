@@ -35,7 +35,8 @@
    "19a9a31e-58f6-41ed-a66d-58100ff48690",
    "c5d7f342-b1f8-42f2-b3c2-399b437be87b",
    "d64a3e3f-6f72-45f1-a05d-e6cbed905376",
-   "50f10f2a-5137-440c-be0a-d17a4432162d"
+   "50f10f2a-5137-440c-be0a-d17a4432162d",
+   "03b575d5-46f2-4d0f-b5ef-f516942860d0"
   ]
  },
  "財報狗": {
@@ -77,7 +78,8 @@
    "4f09704e-c5bb-461a-835d-ebbbd6645a65",
    "3d983c70-7302-467b-a981-51e4d35a3cdf",
    "d5040822-dbe9-4c65-b278-b4035bb5afe4",
-   "f2268bd6-2a41-4cad-a294-eb1185fb4ae5"
+   "f2268bd6-2a41-4cad-a294-eb1185fb4ae5",
+   "ca81649a-3b2a-4a5e-b88d-bd4c2e8f1a12"
   ]
  },
  "沈雲驄說財經": {
@@ -212,7 +214,8 @@
    "2f51b4e7-6173-4499-9cdd-da57a4d3eadb",
    "6baab6b1-70a4-4f0c-8031-ed0170be43ea",
    "f2d5e37f-dc9e-4f9f-bb99-cc20088a43e9",
-   "552098c9-70cf-47a8-9e54-37a9137191e8"
+   "552098c9-70cf-47a8-9e54-37a9137191e8",
+   "122288e1-f467-4a0e-a730-7bb21298b01c"
   ]
  },
  "The Intelligence": {
@@ -252,7 +255,65 @@
  "The World in Brief": {
   "guids": [
    "6adad57a0a858cda449da566",
-   "6adc2103f38f36c2346f5732"
+   "6adc2103f38f36c2346f5732",
+   "6add815f025813dc0cea3e0c"
+  ]
+ },
+ "M觀點": {
+  "guids": [
+   "26c2ed87-7cfd-4d0a-8583-7cc066006ffa",
+   "c7c515a4-9537-4e14-a43e-f83def808471",
+   "2228a20d-2c3e-48d8-9538-8bb8e3a21641",
+   "a92ebf6e-121c-42dc-997b-515d48dcd303",
+   "c2f57401-d681-4276-bba3-efa0d3d3656b",
+   "5726508f-d13e-4bfd-80a9-b5d4b72e75fb",
+   "2f27b778-c361-467b-b886-8c9ff15d88c6",
+   "a7e2f7cb-f0ec-42e9-ac0c-b93996196d81",
+   "7dc2a5f2-a116-4884-801e-28e756635e3a",
+   "efbd1ba0-79b6-4f9a-a2b9-8d74165d2047",
+   "e0ba1ac6-9a8e-4fa9-b60b-3364095f28ce",
+   "9abc2822-8cfe-49e3-a1bc-748fe3a54f44",
+   "095e9e51-2984-458c-81d7-038842234375",
+   "f31c3775-74fc-40c9-a75a-fc040da400b2",
+   "dfb3cae2-5386-444c-aa89-26e9d00f73e7"
+  ]
+ },
+ "All-In Podcast": {
+  "guids": [
+   "21690ac7-0a5e-4f6b-84e3-91f41bbb7680",
+   "ec72ab3a-2b5c-4f7b-9194-875ce45930d1",
+   "f5b1cd7e-b9a3-4c1d-9159-375cab50f6a8",
+   "8c597438-75df-42fd-85bc-7c08156b38b6",
+   "df9fe70c-a787-4f9f-b869-ab6bd6758a7b",
+   "995e85a6-c5d7-46cc-a282-54d6a5eb8d9b",
+   "16094471-70e5-4698-9bac-3958d237b7b7",
+   "1c456716-c38b-472a-9dd0-9d8800f22dd8",
+   "7b660c9d-26d0-4ff4-9205-6808ee6898d5",
+   "39dac85d-ab62-45b0-a587-67797ed8f0ee",
+   "cbcb6353-9937-4c25-9f83-93e1f096d3e6",
+   "5f8aeed3-a44e-46ce-8d55-244a1c95e602",
+   "ebe0e737-5995-476f-8d20-673400e3ec13",
+   "053073fc-e856-48e9-9312-74082d4761ee",
+   "8173444f-00cd-4027-8d2f-c9e911ae2a95"
+  ]
+ },
+ "SemiAnalysis Weekly": {
+  "guids": [
+   "67407b17-fc00-459d-bcd7-cac8281297be",
+   "27dff112-099e-47eb-95a4-c9aba0ed9414",
+   "79088467-ffe5-4436-b693-62ead9c7e4ac",
+   "cdacfd46-6d2e-45fa-aa03-5ad22d324188",
+   "65ca74af-de7f-4c5f-b81a-88a7ef62156c",
+   "233d9970-74f8-42c7-8383-f7ea5f70f1d6",
+   "f737ec61-bcbd-439a-903c-06663c5541c6",
+   "d5619c2f-7fe2-4523-bc0d-d15a03dbfbb1",
+   "fd07af4b-4e94-4e1b-8b19-10a1d811e550",
+   "c388001b-f12f-4458-bb39-61429b0def96",
+   "cde6360e-d345-4ead-a9bb-1f973baf6ab8",
+   "77cd4aba-55ef-451a-a575-1793d9acfd20",
+   "f0efd40e-08b6-487c-b5fb-31f1ad40db69",
+   "2bbc686d-ae76-447b-b649-410ff08bcacc",
+   "953662b3-f08d-4981-88d2-72b1eabf751c"
   ]
  }
 }
