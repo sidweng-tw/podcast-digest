@@ -40,7 +40,8 @@
    "c5d7f342-b1f8-42f2-b3c2-399b437be87b",
    "d64a3e3f-6f72-45f1-a05d-e6cbed905376",
    "50f10f2a-5137-440c-be0a-d17a4432162d",
-   "03b575d5-46f2-4d0f-b5ef-f516942860d0"
+   "03b575d5-46f2-4d0f-b5ef-f516942860d0",
+   "2dd2b7c9-d108-4f5d-aa6d-4b8ae2a56d78"
   ]
  },
  "財報狗": {
@@ -248,7 +249,8 @@
    "53e00044-a324-41b1-a0a5-663bd90ecdae",
    "c7d0e356-4280-4c6e-9745-85e59374e055",
    "2477b055-49b6-4d6e-b527-96f9adf68fb5",
-   "e7a49173-1e04-4b80-a8d2-7dbcd7236b35"
+   "e7a49173-1e04-4b80-a8d2-7dbcd7236b35",
+   "92c4c6cb-4077-4a0e-bf32-12a44d1dd1f2"
   ]
  },
  "The Intelligence": {
@@ -300,7 +302,8 @@
    "6ae173cf664593f80646e3e0",
    "6ae2c5f3e188fd9d1d2db871",
    "6ae40ccbd925811fc2fc87bc",
-   "6ae56aa2e8cdbf26dd18be7b"
+   "6ae56aa2e8cdbf26dd18be7b",
+   "6ae6bd6cc89efe586693f9ea"
   ]
  },
  "M觀點": {
@@ -375,7 +378,8 @@
    "e06eae0e-ca2f-591b-a0e0-d613682890ed",
    "c0d5c160-8985-58d2-9195-4de11e3622e9",
    "a4603b18-90f6-5e07-bc2a-a4acb9db2621",
-   "63262ea7-aa2f-5b76-b214-3a46cd0e1b1d"
+   "63262ea7-aa2f-5b76-b214-3a46cd0e1b1d",
+   "75c7aa60-c008-533e-b266-67a10001c816"
   ]
  },
  "Acquired": {
@@ -395,6 +399,51 @@
    "9602cea2-2491-4587-90f6-7bf7f7988dd7",
    "b0014fa0-de13-4d3e-b5f3-cbe3fc463bb1",
    "f936519e-86fa-4621-9f05-523aa77ab2f3"
+  ]
+ },
+ "科技報橘 全新一週": {
+  "guids": [
+   "38b30d84-62c2-46a7-a19d-3ceb63a6661c",
+   "a5fcbd5d-facf-4670-b230-aea33b855491",
+   "df036168-b2ec-4d18-a75f-e79dc62656a3"
+  ]
+ },
+ "科技行腳": {
+  "guids": [
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261026-technologytravelfar.mp3[Sun, 25 Oct 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261019-technologytravelfar.mp3[Sun, 18 Oct 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261012-technologytravelfar.mp3[Sun, 11 Oct 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261005-technologytravelfar.mp3[Sun, 04 Oct 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260928-technologytravelfar.mp3[Sun, 27 Sep 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260921-technologytravelfar.mp3[Sun, 20 Sep 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260914-technologytravelfar.mp3[Sun, 13 Sep 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260907-technologytravelfar.mp3[Sun, 06 Sep 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260831-technologytravelfar.mp3[Sun, 30 Aug 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260824-technologytravelfar.mp3[Sun, 23 Aug 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260817-technologytravelfar.mp3[Sun, 16 Aug 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260810-technologytravelfar.mp3[Sun, 09 Aug 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260803-technologytravelfar.mp3[Sun, 02 Aug 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260727-technologytravelfar.mp3[Sun, 26 Jul 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260720-technologytravelfar.mp3[Sun, 19 Jul 2026 22:00:00 +0000]"
+  ]
+ },
+ "科技聽IC": {
+  "guids": [
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261029-technologynews-1.mp3[Wed, 28 Oct 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261027-technologynews.mp3[Mon, 26 Oct 2026 22:45:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261022-technologynews.mp3[Wed, 21 Oct 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261020-technologynews.mp3[Mon, 19 Oct 2026 22:45:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261015-technologynews.mp3[Wed, 14 Oct 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261013-technologynews.mp3[Mon, 12 Oct 2026 22:45:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261008-technologynews.mp3[Wed, 07 Oct 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261006-technologynews.mp3[Mon, 05 Oct 2026 22:45:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261001-technologynews.mp3[Wed, 30 Sep 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260929-technologynews.mp3[Mon, 28 Sep 2026 22:45:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260924-technologynews.mp3[Wed, 23 Sep 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260922-technologynews.mp3[Mon, 21 Sep 2026 22:45:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260917-technologynews.mp3[Wed, 16 Sep 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260915-technologynews.mp3[Mon, 14 Sep 2026 22:45:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260910-technologynews.mp3[Wed, 09 Sep 2026 22:00:00 +0000]"
   ]
  }
 }
