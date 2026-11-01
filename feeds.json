@@ -48,6 +48,11 @@
     "feed": "https://podcast.tzangms.com/feed.xml"
   },
   {
+    "name": "科技報橘 全新一週",
+    "feed": "https://feeds.soundon.fm/podcasts/ead686e9-4513-4217-beb5-5fa4d215860d.xml",
+    "title_include": "【全新一週】"
+  },
+  {
     "name": "The Daily",
     "feed": "https://feeds.simplecast.com/Sl5CSM3S"
   },

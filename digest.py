@@ -90,6 +90,9 @@ def find_new(state):
         seen = state.setdefault(name, {"guids": []})
         first_time = not seen["guids"]
         for e in d.entries[:15]:
+            inc = f.get("title_include")  # 同一 feed 混多個節目時，只收標題含此字串的集數
+            if inc and inc not in e.get("title", ""):
+                continue
             gid = e.get("id") or e.get("guid") or enclosure(e)
             if not gid or gid in seen["guids"]:
                 continue
