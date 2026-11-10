@@ -9,6 +9,18 @@ on:
         description: '只偵測新集數，不轉錄、不寄信'
         type: boolean
         default: false
+      only:
+        description: '測試用：只處理名稱含此字串的節目'
+        type: string
+        default: ''
+      limit:
+        description: '測試用：最多處理幾集（0 = 不限）'
+        type: string
+        default: '0'
+      max_age_h:
+        description: '測試用：首次出現的節目回溯多少小時（空白 = 36）'
+        type: string
+        default: ''
 
 permissions:
   contents: write
@@ -46,6 +58,9 @@ jobs:
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           MAIL_TO: ${{ secrets.MAIL_TO }}
           DRYRUN: ${{ inputs.dryrun && '1' || '0' }}
+          ONLY: ${{ inputs.only }}
+          LIMIT: ${{ inputs.limit || '0' }}
+          MAX_AGE_H: ${{ inputs.max_age_h || '36' }}
           TIME_BUDGET_MIN: '300'
         run: python digest.py
 

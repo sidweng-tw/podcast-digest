@@ -61,6 +61,10 @@
     "feed": "https://www.ic975.com/feed/technologynews/"
   },
   {
+    "name": "邦妮區塊鏈",
+    "feed": "https://feeds.soundon.fm/podcasts/2eb39844-cbf3-4c0b-ae60-69947bd1e27e.xml"
+  },
+  {
     "name": "The Daily",
     "feed": "https://feeds.simplecast.com/Sl5CSM3S"
   },
@@ -87,5 +91,14 @@
   {
     "name": "Acquired",
     "feed": "https://feeds.transistor.fm/acquired"
+  },
+  {
+    "name": "Nieman Storyboard",
+    "feed": "https://feeds.buzzsprout.com/2449998.rss"
+  },
+  {
+    "name": "OBF",
+    "kind": "youtube",
+    "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCK1XzxcKXB_v_dcw_tflC1A"
   }
 ]

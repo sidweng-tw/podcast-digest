@@ -101,15 +101,19 @@ def find_new(state):
             if first_time and now - ts > MAX_AGE_H * 3600:
                 seen["guids"].append(gid)  # 首次只建基準，不補舊集
                 continue
-            url = enclosure(e)
-            if not url:
+            yt = f.get("kind") == "youtube"
+            url = e.get("link") if yt else enclosure(e)
+            if not url or (yt and "/shorts/" in url):
+                if yt:
+                    seen["guids"].append(gid)  # Shorts 不處理，記起來避免每天重判
                 continue
             todo.append({
+                "yt": yt,
                 "show": name, "guid": gid, "title": e.get("title", "").strip(),
                 "published": time.strftime("%Y-%m-%d %H:%M", time.gmtime(ts + 8 * 3600)),
                 "ts": ts, "duration": dur_sec(e.get("itunes_duration")),
-                "link": e.get("link", ""), "audio": url,
-                "notes": strip_html(e.get("summary", "")),
+                "link": e.get("link", ""), "audio": url, "lang": f.get("lang", "zh"),
+                "notes": strip_html(e.get("summary", "") or e.get("media_description", "")),
             })
     todo.sort(key=lambda x: x["ts"])
     return todo[:LIMIT] if LIMIT else todo
@@ -210,7 +214,17 @@ def main():
         with tempfile.TemporaryDirectory() as tmp:
             raw = f"{tmp}/a"
             t0 = time.time()
-            subprocess.run(["curl", "-sSfL", "--retry", "3", "-o", raw, ep["audio"]], check=True)
+            if ep.get("yt"):
+                subprocess.run(["yt-dlp", "-q", "--no-warnings", "--js-runtimes", "node",
+                                "--match-filter", "duration>=180 & !is_live",
+                                "-f", "bestaudio", "-o", raw, ep["audio"]], check=True)
+                if not Path(raw).exists():  # 被 match-filter 擋掉（太短或直播）
+                    print(f"略過 {ep['show']}｜{ep['title']}：不符條件（短於 3 分鐘或直播）")
+                    state[ep["show"]]["guids"].append(ep["guid"])
+                    save_state(state)
+                    return
+            else:
+                subprocess.run(["curl", "-sSfL", "--retry", "3", "-o", raw, ep["audio"]], check=True)
             text, sec = transcribe(raw)  # faster-whisper 內建 PyAV 解碼，不需 ffmpeg
             n = send(ep, text, sec)
             print(f"完成 {ep['show']}｜{ep['title']}：音檔 {sec / 60:.0f} 分，耗時 {(time.time() - t0) / 60:.1f} 分，信件 {n} 字元")

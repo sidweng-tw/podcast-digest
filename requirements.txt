@@ -1,3 +1,4 @@
 feedparser
 faster-whisper
 opencc-python-reimplemented
+yt-dlp[default]
