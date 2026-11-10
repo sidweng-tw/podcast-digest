@@ -95,10 +95,5 @@
   {
     "name": "Nieman Storyboard",
     "feed": "https://feeds.buzzsprout.com/2449998.rss"
-  },
-  {
-    "name": "OBF",
-    "kind": "youtube",
-    "feed": "https://www.youtube.com/feeds/videos.xml?channel_id=UCK1XzxcKXB_v_dcw_tflC1A"
   }
 ]
