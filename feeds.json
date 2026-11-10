@@ -65,20 +65,12 @@
     "feed": "https://feeds.soundon.fm/podcasts/2eb39844-cbf3-4c0b-ae60-69947bd1e27e.xml"
   },
   {
-    "name": "The Daily",
-    "feed": "https://feeds.simplecast.com/Sl5CSM3S"
-  },
-  {
     "name": "The Intelligence",
     "feed": "https://access.acast.com/rss/d556eb54-6160-4c85-95f4-47d9f5216c49"
   },
   {
     "name": "Money Talks",
     "feed": "https://feeds.acast.com/public/shows/theeconomistmoneytalks"
-  },
-  {
-    "name": "The World in Brief",
-    "feed": "https://access.acast.com/rss/theeconomistmorningbriefing/default"
   },
   {
     "name": "All-In Podcast",
