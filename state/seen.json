@@ -25,7 +25,9 @@
    "cmvzi7ry500gl01wygwg22joj",
    "cmw1ycnb2080901yv4jhh2djm",
    "cmw4zjelm00tq01vp5ja53e99",
-   "cmw97f429001a01v73buwakfz"
+   "cmw97f429001a01v73buwakfz",
+   "cmw97bi3y00dh01uy0tf5bn60",
+   "cmwaevtw6000b01v61wejaot0"
   ]
  },
  "財經M平方": {
@@ -77,8 +79,6 @@
  },
  "聽天下": {
   "guids": [
-   "2ca4724d-5d56-4df1-906e-b70e9db20ffc",
-   "93c7f0dc-229b-4b16-be72-72884f9624f9",
    "0b2d92ef-a0ad-455d-92da-f438653ec703",
    "24378ea5-fb16-44c1-b3c1-c0ea75f49733",
    "e922848a-82e5-45c0-a8ab-4fff2dc295dd",
@@ -126,7 +126,9 @@
    "3661e771-c071-41ab-87ec-3cde6ab58fb9",
    "625c9a2b-cf61-41e4-91da-c6d59bfea46d",
    "7eb22b9e-942b-404c-b319-da72bcdcc256",
-   "ce0af027-4df5-420c-9277-bbfe2793ec3d"
+   "ce0af027-4df5-420c-9277-bbfe2793ec3d",
+   "7ee19d83-75f6-4755-a435-cd99aa5413d9",
+   "8f858fa0-e489-4ced-a075-d0ce1c6ea121"
   ]
  },
  "沈雲驄說財經": {
@@ -260,7 +262,8 @@
    "e7908865-3f10-458f-9f99-3200f7bc59e5",
    "ee1a310a-4dc0-4c84-8ae5-67cceafce51e",
    "8462148d-326b-468a-ada4-b75a3097bd0b",
-   "a207bb0a-3d97-4b41-9bf2-099a00e22647"
+   "a207bb0a-3d97-4b41-9bf2-099a00e22647",
+   "18e89c6b-1da5-467c-8f34-c0e737b122c3"
   ]
  },
  "The Daily": {
@@ -327,7 +330,8 @@
    "6aeb148e2d18c73dd5116294",
    "6aec4fff51ac9ecbba3b7818",
    "6aedac35dabcb4d1f2d2092c",
-   "6af19d18e7c6d309d1116743"
+   "6af19d18e7c6d309d1116743",
+   "6af2f4ae43e2f445c2499225"
   ]
  },
  "Money Talks": {
@@ -518,7 +522,8 @@
    "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260915-technologynews.mp3[Mon, 14 Sep 2026 22:45:00 +0000]",
    "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260910-technologynews.mp3[Wed, 09 Sep 2026 22:00:00 +0000]",
    "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261103-technologynews.mp3[Mon, 02 Nov 2026 22:45:00 +0000]",
-   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261105-technologynews.mp3[Wed, 04 Nov 2026 22:00:00 +0000]"
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261105-technologynews.mp3[Wed, 04 Nov 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261110-technologynews.mp3[Mon, 09 Nov 2026 22:45:00 +0000]"
   ]
  },
  "OBF": {
@@ -535,6 +540,44 @@
    "yt:video:QpWMEGLgaZ8",
    "yt:video:6KbziZeNaUA",
    "yt:video:kew0EIR5oxk"
+  ]
+ },
+ "邦妮區塊鏈": {
+  "guids": [
+   "7f58a0c2-7973-4e64-87dc-f4100e9e25b1",
+   "e5589aca-2cbd-4716-9714-46e86d0cbfde",
+   "43b0bb14-515e-42eb-882d-e230c4a23db2",
+   "68462305-f169-4bfc-80b1-7dc499a5ce23",
+   "2fe8ddf6-39ed-4d1e-9c5d-cad8fc40e276",
+   "4c65d4fe-dc7c-4172-9f75-e33ca6429737",
+   "e9b03d40-a5e1-4b7b-b65d-3c09a4331e48",
+   "1e4ed3be-5753-42cb-b0e6-038c3ccbc8d0",
+   "627acd73-6f85-4638-9fbf-37524c1c182e",
+   "f86b7cbb-dc09-4588-a009-723c19ed8f1b",
+   "dbf9b1a6-bff2-4dfa-b8f2-1d035e4d4f48",
+   "133f76be-c47f-4692-bee7-43a8e7f2d858",
+   "6d5162ab-f17e-49c6-bc60-57d494505447",
+   "9fb4cdaf-0494-4aaf-a76a-756c6a9a960b",
+   "6a9e8ee1-cd69-4741-8bff-64286e2d7b14"
+  ]
+ },
+ "Nieman Storyboard": {
+  "guids": [
+   "Buzzsprout-20082204",
+   "Buzzsprout-19970032",
+   "Buzzsprout-19787146",
+   "Buzzsprout-19714303",
+   "Buzzsprout-19643852",
+   "Buzzsprout-19576673",
+   "Buzzsprout-19505017",
+   "Buzzsprout-18708876",
+   "Buzzsprout-18626704",
+   "Buzzsprout-18550019",
+   "Buzzsprout-18470945",
+   "Buzzsprout-18295769",
+   "Buzzsprout-18179773",
+   "Buzzsprout-18058074",
+   "Buzzsprout-17979777"
   ]
  }
 }
