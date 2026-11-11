@@ -79,9 +79,6 @@
  },
  "聽天下": {
   "guids": [
-   "0b2d92ef-a0ad-455d-92da-f438653ec703",
-   "24378ea5-fb16-44c1-b3c1-c0ea75f49733",
-   "e922848a-82e5-45c0-a8ab-4fff2dc295dd",
    "2e1a0e24-2eca-4862-baba-cced94fa5091",
    "69d46367-226b-472e-b557-2e4590795497",
    "14384607-409b-4294-8fb6-d6b756d13eb9",
@@ -128,7 +125,10 @@
    "7eb22b9e-942b-404c-b319-da72bcdcc256",
    "ce0af027-4df5-420c-9277-bbfe2793ec3d",
    "7ee19d83-75f6-4755-a435-cd99aa5413d9",
-   "8f858fa0-e489-4ced-a075-d0ce1c6ea121"
+   "8f858fa0-e489-4ced-a075-d0ce1c6ea121",
+   "2486a1b8-cd32-4069-84d4-6aaa438030bd",
+   "7576382b-1a85-4dd6-bfa9-1096e670afc2",
+   "648a7e3c-588a-4e6b-88af-78f575a8d43a"
   ]
  },
  "沈雲驄說財經": {
@@ -149,7 +149,8 @@
    "cms4kauac1d9y01xffra3cn1b",
    "cmrufqllm29qs01xbc7pi3a1x",
    "cmvq7q75y095o01yoea20heb6",
-   "cmw0i79xl00tl010796ew0oc2"
+   "cmw0i79xl00tl010796ew0oc2",
+   "cmwajikwu00is01sydc8r42lc"
   ]
  },
  "月球背面的經濟學": {
@@ -170,7 +171,8 @@
    "cmru9ao6h0skt01ul7zwsf2t4",
    "cmrkf6u6600ey010e21sx0mrl",
    "cmvknzzyq009201wb90kj7rmw",
-   "cmvui8yq504td01xu5tc34630"
+   "cmvui8yq504td01xu5tc34630",
+   "cmw4iduu000w901zwc4eugftp"
   ]
  },
  "塞掐 Side Chat": {
@@ -263,7 +265,8 @@
    "ee1a310a-4dc0-4c84-8ae5-67cceafce51e",
    "8462148d-326b-468a-ada4-b75a3097bd0b",
    "a207bb0a-3d97-4b41-9bf2-099a00e22647",
-   "18e89c6b-1da5-467c-8f34-c0e737b122c3"
+   "18e89c6b-1da5-467c-8f34-c0e737b122c3",
+   "f2a577d1-4360-449e-81f8-1a184790824e"
   ]
  },
  "The Daily": {
@@ -331,7 +334,8 @@
    "6aec4fff51ac9ecbba3b7818",
    "6aedac35dabcb4d1f2d2092c",
    "6af19d18e7c6d309d1116743",
-   "6af2f4ae43e2f445c2499225"
+   "6af2f4ae43e2f445c2499225",
+   "6af4462e36d94b58ef827a8a"
   ]
  },
  "Money Talks": {
@@ -415,7 +419,8 @@
    "8173444f-00cd-4027-8d2f-c9e911ae2a95",
    "25ed3987-a02b-434e-8a71-ed74bad8e863",
    "6b0acd19-a13a-4474-8e02-402215408f4f",
-   "53093a95-1b90-4228-aaf2-2d8ee77fd504"
+   "53093a95-1b90-4228-aaf2-2d8ee77fd504",
+   "8de68398-23b0-492c-b5d4-f18ff7bd227f"
   ]
  },
  "SemiAnalysis Weekly": {
