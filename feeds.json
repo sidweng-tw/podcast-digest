@@ -87,5 +87,21 @@
   {
     "name": "Nieman Storyboard",
     "feed": "https://feeds.buzzsprout.com/2449998.rss"
+  },
+  {
+    "name": "DIGITIMES每日新聞",
+    "feed": "https://www.ic975.com/feed/dtdailynews/"
+  },
+  {
+    "name": "Tech666",
+    "feed": "https://www.ic975.com/feed/yaotech/"
+  },
+  {
+    "name": "科技領航家",
+    "feed": "https://www.ic975.com/feed/creativecaptain/"
+  },
+  {
+    "name": "藍湖策略．數位轉型",
+    "feed": "https://www.ic975.com/feed/bluelake/"
   }
 ]
