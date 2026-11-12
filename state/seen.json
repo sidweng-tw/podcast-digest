@@ -27,7 +27,8 @@
    "cmw4zjelm00tq01vp5ja53e99",
    "cmw97f429001a01v73buwakfz",
    "cmw97bi3y00dh01uy0tf5bn60",
-   "cmwaevtw6000b01v61wejaot0"
+   "cmwaevtw6000b01v61wejaot0",
+   "cmwbuc5x3004701sr8c8mf9e2"
   ]
  },
  "財經M平方": {
@@ -79,9 +80,6 @@
  },
  "聽天下": {
   "guids": [
-   "2e1a0e24-2eca-4862-baba-cced94fa5091",
-   "69d46367-226b-472e-b557-2e4590795497",
-   "14384607-409b-4294-8fb6-d6b756d13eb9",
    "b7ca93af-8fcc-48e0-9768-31822c45570c",
    "973181c1-363c-4a88-ba3c-91d6438b6b06",
    "9171cb6c-c53f-40f1-a70f-e2642f1082e0",
@@ -128,7 +126,10 @@
    "8f858fa0-e489-4ced-a075-d0ce1c6ea121",
    "2486a1b8-cd32-4069-84d4-6aaa438030bd",
    "7576382b-1a85-4dd6-bfa9-1096e670afc2",
-   "648a7e3c-588a-4e6b-88af-78f575a8d43a"
+   "648a7e3c-588a-4e6b-88af-78f575a8d43a",
+   "d67fd14e-77cc-4538-a739-589a06677172",
+   "4b1c7aa7-5ba8-4583-98a2-f6d076ac6a3a",
+   "911d96d4-24cd-4913-bb36-092cb4785ce0"
   ]
  },
  "沈雲驄說財經": {
@@ -235,7 +236,8 @@
    "cmma521na001g01vs5p5b6nwg",
    "cmlyj75so0ax301w52dn261on",
    "cmlg2mni517um010ggj4o1ruv",
-   "cmvjn8odl00ve01u5bcx65vob"
+   "cmvjn8odl00ve01u5bcx65vob",
+   "cmwd1rb7u003601x1660i6566"
   ]
  },
  "美股投資學-財女珍妮": {
@@ -266,7 +268,8 @@
    "8462148d-326b-468a-ada4-b75a3097bd0b",
    "a207bb0a-3d97-4b41-9bf2-099a00e22647",
    "18e89c6b-1da5-467c-8f34-c0e737b122c3",
-   "f2a577d1-4360-449e-81f8-1a184790824e"
+   "f2a577d1-4360-449e-81f8-1a184790824e",
+   "6e5c47d7-776c-4502-a5eb-3d9b53183cde"
   ]
  },
  "The Daily": {
@@ -335,7 +338,8 @@
    "6aedac35dabcb4d1f2d2092c",
    "6af19d18e7c6d309d1116743",
    "6af2f4ae43e2f445c2499225",
-   "6af4462e36d94b58ef827a8a"
+   "6af4462e36d94b58ef827a8a",
+   "6af5967413c30781a320173d"
   ]
  },
  "Money Talks": {
@@ -397,7 +401,8 @@
    "ea789dd2-82f0-4825-a495-aa8488ed3964",
    "f5bcee33-af5f-4a24-80db-ec4d2e72ce12",
    "0d609731-8e1b-47d7-82d8-5a7957b56144",
-   "38fc2bf7-4348-46f4-9190-7f2613bb3156"
+   "38fc2bf7-4348-46f4-9190-7f2613bb3156",
+   "79b3c4ee-2a2b-455b-92f4-5e49f79f69cd"
   ]
  },
  "All-In Podcast": {
@@ -528,7 +533,8 @@
    "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260910-technologynews.mp3[Wed, 09 Sep 2026 22:00:00 +0000]",
    "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261103-technologynews.mp3[Mon, 02 Nov 2026 22:45:00 +0000]",
    "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261105-technologynews.mp3[Wed, 04 Nov 2026 22:00:00 +0000]",
-   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261110-technologynews.mp3[Mon, 09 Nov 2026 22:45:00 +0000]"
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261110-technologynews.mp3[Mon, 09 Nov 2026 22:45:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261112-technologynews.mp3[Wed, 11 Nov 2026 22:00:00 +0000]"
   ]
  },
  "OBF": {
@@ -583,6 +589,82 @@
    "Buzzsprout-18179773",
    "Buzzsprout-18058074",
    "Buzzsprout-17979777"
+  ]
+ },
+ "DIGITIMES每日新聞": {
+  "guids": [
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261111-dtdailynews-1.mp3[Tue, 10 Nov 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261110-dtdailynews-2.mp3[Tue, 10 Nov 2026 10:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261110-dtdailynews-1.mp3[Mon, 09 Nov 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261109-dtdailynews-2.mp3[Mon, 09 Nov 2026 10:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261109-dtdailynews-1.mp3[Sun, 08 Nov 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261106-dtdailynews-2.mp3[Fri, 06 Nov 2026 10:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261106-dtdailynews-1.mp3[Thu, 05 Nov 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261105-dtdailynews-2.mp3[Thu, 05 Nov 2026 10:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261105-dtdailynews-1.mp3[Wed, 04 Nov 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261104-dtdailynews-2.mp3[Wed, 04 Nov 2026 10:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261104-dtdailynews-1.mp3[Tue, 03 Nov 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261103-dtdailynews-2.mp3[Tue, 03 Nov 2026 10:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261111-dtdailynews-2.mp3[Wed, 11 Nov 2026 10:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261112-dtdailynews-1.mp3[Wed, 11 Nov 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261112-dtdailynews-2.mp3[Thu, 12 Nov 2026 10:00:00 +0000]"
+  ]
+ },
+ "Tech666": {
+  "guids": [
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261111-yaotech.mp3[Tue, 10 Nov 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261104-yaotech.mp3[Tue, 03 Nov 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261028-yaotech.mp3[Tue, 27 Oct 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261021-yaotech.mp3[Tue, 20 Oct 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261014-yaotech.mp3[Tue, 13 Oct 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261007-yaotech.mp3[Tue, 06 Oct 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260930-yaotech.mp3[Tue, 29 Sep 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260923-yaotech.mp3[Tue, 22 Sep 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260916-yaotech.mp3[Tue, 15 Sep 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260909-yaotech.mp3[Tue, 08 Sep 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260902-yaotech.mp3[Tue, 01 Sep 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260826-yaotech.mp3[Tue, 25 Aug 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260819-yaotech-1.mp3[Tue, 18 Aug 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260812-yaotech.mp3[Tue, 11 Aug 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260805-yaotech.mp3[Tue, 04 Aug 2026 22:00:00 +0000]"
+  ]
+ },
+ "科技領航家": {
+  "guids": [
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261110-creativecaptain.mp3[Tue, 10 Nov 2026 03:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261103-creativecaptain.mp3[Tue, 03 Nov 2026 03:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261027-creativecaptain.mp3[Tue, 27 Oct 2026 03:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261020-creativecaptain.mp3[Tue, 20 Oct 2026 03:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261013-creativecaptain.mp3[Tue, 13 Oct 2026 03:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261006-creativecaptain.mp3[Tue, 06 Oct 2026 03:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260929-creativecaptain.mp3[Tue, 29 Sep 2026 03:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260922-creativecaptain.mp3[Tue, 22 Sep 2026 03:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260915-creativecaptain-1.mp3[Tue, 15 Sep 2026 03:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260908-creativecaptain.mp3[Tue, 08 Sep 2026 03:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260901-creativecaptain.mp3[Tue, 01 Sep 2026 03:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260825-creativecaptain.mp3[Tue, 25 Aug 2026 03:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260818-creativecaptain.mp3[Tue, 18 Aug 2026 03:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260811-creativecaptain.mp3[Tue, 11 Aug 2026 03:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260804-creativecaptain.mp3[Tue, 04 Aug 2026 03:00:00 +0000]"
+  ]
+ },
+ "藍湖策略．數位轉型": {
+  "guids": [
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261106-bluelake.mp3[Thu, 05 Nov 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261030-bluelake.mp3[Thu, 29 Oct 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261023-bluelake.mp3[Thu, 22 Oct 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261016-bluelake.mp3[Thu, 15 Oct 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261009-bluelake.mp3[Thu, 08 Oct 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261002-bluelake.mp3[Thu, 01 Oct 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260925-bluelake.mp3[Thu, 24 Sep 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260918-bluelake.mp3[Thu, 17 Sep 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260911-bluelake.mp3[Thu, 10 Sep 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260904-bluelake.mp3[Thu, 03 Sep 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260828-bluelake.mp3[Thu, 27 Aug 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260821-bluelake.mp3[Thu, 20 Aug 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260814-bluelake.mp3[Thu, 13 Aug 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260807-bluelake.mp3[Thu, 06 Aug 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260731-bluelake.mp3[Thu, 30 Jul 2026 22:00:00 +0000]"
   ]
  }
 }
