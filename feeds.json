@@ -103,5 +103,9 @@
   {
     "name": "藍湖策略．數位轉型",
     "feed": "https://www.ic975.com/feed/bluelake/"
+  },
+  {
+    "name": "TBPN",
+    "feed": "https://feeds.transistor.fm/technology-brother"
   }
 ]
