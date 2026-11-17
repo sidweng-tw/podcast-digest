@@ -93,12 +93,11 @@ def find_new(state):
             inc = f.get("title_include")  # 同一 feed 混多個節目時，只收標題含此字串的集數
             if inc and inc not in e.get("title", ""):
                 continue
-            exc = f.get("title_exclude")  # 標題含此字串的集數不收
-            if exc and exc in e.get("title", ""):
-                continue
-            minm = f.get("min_minutes")  # 長度不足此分鐘數的集數不收（過濾精華、訪談片段）
-            if minm and dur_sec(e.get("itunes_duration")) < minm * 60:
-                continue
+            exc = f.get("title_exclude")  # 標題含任一字串的集數不收（字串或清單）
+            if exc:
+                excs = [exc] if isinstance(exc, str) else exc
+                if any(x in e.get("title", "") for x in excs):
+                    continue
             gid = e.get("id") or e.get("guid") or enclosure(e)
             if not gid or gid in seen["guids"]:
                 continue

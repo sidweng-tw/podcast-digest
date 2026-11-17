@@ -107,7 +107,10 @@
   {
     "name": "TBPN",
     "feed": "https://feeds.transistor.fm/technology-brother",
-    "title_exclude": "Diet TBPN",
-    "min_minutes": 60
+    "title_exclude": [
+      "Diet TBPN",
+      " — ",
+      " - "
+    ]
   }
 ]
