@@ -112,5 +112,9 @@
       " — ",
       " - "
     ]
+  },
+  {
+    "name": "The Journal",
+    "feed": "https://video-api.shdsvc.dowjones.io/api/podcasts/feed/the%20journal"
   }
 ]
