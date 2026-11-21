@@ -116,5 +116,9 @@
   {
     "name": "The Journal",
     "feed": "https://video-api.shdsvc.dowjones.io/api/podcasts/feed/the%20journal"
+  },
+  {
+    "name": "吳淡如人生實用商學院",
+    "feed": "https://feeds.soundon.fm/podcasts/73930beb-4136-4b36-a910-39984335b7bb.xml"
   }
 ]
