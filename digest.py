@@ -12,6 +12,7 @@
   DRYRUN=1      只偵測、不轉錄不寄信
   MAX_AGE_H     第一次執行（或某節目第一次出現）只收這麼多小時內的集數，預設 36
   TIME_BUDGET_MIN  本次轉錄總時間上限（分鐘），預設 300（GitHub 單次執行上限 6 小時）
+  SHARD         "i/n"：把當天待處理集數依長度平均分給 n 個並行 job，本 job 只處理第 i 份（空白 = 全部自己處理）
 """
 import calendar
 import json
@@ -37,6 +38,7 @@ DRYRUN = os.environ.get("DRYRUN") == "1"
 START = time.time()
 ONLY = os.environ.get("ONLY", "")          # 測試用：只處理名稱含此字串的節目
 LIMIT = int(os.environ.get("LIMIT", "0"))  # 測試用：最多處理幾集
+SHARD = os.environ.get("SHARD", "").strip()  # "i/n"，並行分片
 
 PROMPT = "以下是台灣財經、科技節目的逐字稿，使用繁體中文與台灣用語，包含台積電、輝達、聯發科等公司名稱。"
 # 常被聽錯的專有名詞，餵給 Whisper 當提示詞（hotwords）。Sid 糾正過的名稱請加在這裡。
@@ -155,6 +157,43 @@ def transcribe(path):
     return text.strip(), info.duration
 
 
+def smtp_connect(user, pwd, attempts=3):
+    """登入 Gmail SMTP。先試 465（SSL），斷線或逾時再試 587（STARTTLS），整輪重試 attempts 次。
+    密碼錯誤（535）不重試，直接拋出。11/20–11/21 曾因 465 登入時被 Google 直接斷線（SMTPServerDisconnected）
+    而整天沒轉錄，原本只試一次就放棄。"""
+    ctx = ssl.create_default_context()
+    last = None
+    for i in range(attempts):
+        for port in (465, 587):
+            s = None
+            try:
+                if port == 465:
+                    s = smtplib.SMTP_SSL("smtp.gmail.com", 465, context=ctx, timeout=60)
+                else:
+                    s = smtplib.SMTP("smtp.gmail.com", 587, timeout=60)
+                    s.starttls(context=ctx)
+                s.login(user, pwd)
+                return s
+            except smtplib.SMTPAuthenticationError:
+                if s:
+                    try:
+                        s.close()
+                    except Exception:
+                        pass
+                raise
+            except Exception as ex:
+                last = ex
+                print(f"SMTP 連線／登入失敗（埠 {port}，第 {i + 1} 輪）：{type(ex).__name__} {str(ex)[:200]}")
+                if s:
+                    try:
+                        s.close()
+                    except Exception:
+                        pass
+        if i < attempts - 1:
+            time.sleep(20 * (i + 1))
+    raise last
+
+
 def send(ep, transcript, audio_sec):
     user = os.environ["GMAIL_USER"].strip()
     pwd = os.environ["GMAIL_APP_PASSWORD"].replace(" ", "").strip()
@@ -173,8 +212,7 @@ def send(ep, transcript, audio_sec):
     msg.set_content(body)
     for i in range(3):
         try:
-            with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=ssl.create_default_context()) as s:
-                s.login(user, pwd)
+            with smtp_connect(user, pwd) as s:
                 s.send_message(msg)
             return len(body)
         except Exception as ex:
@@ -191,17 +229,38 @@ def check_smtp():
         sys.exit("::error::GMAIL_USER／GMAIL_APP_PASSWORD／MAIL_TO 有空值，請檢查 secrets")
     print(f"應用程式密碼長度：{len(pwd)}（Gmail 應為 16）")
     try:
-        with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=ssl.create_default_context()) as s:
-            s.login(user, pwd)
+        with smtp_connect(user, pwd):
+            pass
+    except smtplib.SMTPAuthenticationError as ex:
+        sys.exit(f"::error::Gmail 密碼被拒（應用程式密碼可能失效，請重新產生並更新 secret）：{str(ex)[:200]}")
     except Exception as ex:
-        sys.exit(f"::error::Gmail 登入失敗：{type(ex).__name__} {str(ex)[:200]}")
+        sys.exit(f"::error::Gmail 登入失敗（465、587 各試 3 輪）：{type(ex).__name__} {str(ex)[:200]}")
     print("Gmail 登入測試通過")
+
+
+def pick_shard(todo):
+    """把待處理集數依長度由長到短、依序丟給目前累計最短的分片（LPT），讓各分片總長度接近。
+    各分片各自抓同一份 RSS、算出同一份 todo，所以分法一致；本分片只處理自己那份，仍依發布時間由舊到新。"""
+    if not SHARD:
+        return todo
+    i, n = (int(x) for x in SHARD.split("/"))
+    loads = [0] * n
+    mine = []
+    for ep in sorted(todo, key=lambda e: (-(e["duration"] or 1800), e["guid"])):
+        k = loads.index(min(loads))
+        loads[k] += ep["duration"] or 1800
+        if k == i:
+            mine.append(ep)
+    print(f"分片 {i + 1}/{n}：分到 {len(mine)} 集、約 {sum(e['duration'] for e in mine) / 60:.0f} 分鐘"
+          f"（各分片約 {', '.join(f'{x / 60:.0f}' for x in loads)} 分鐘）")
+    return sorted(mine, key=lambda x: x["ts"])
 
 
 def main():
     state = load_state()
     todo = find_new(state)
     print(f"新集數 {len(todo)} 集，共約 {sum(e['duration'] for e in todo) / 60:.0f} 分鐘")
+    todo = pick_shard(todo)
     for ep in todo:
         print(f"- {ep['show']}｜{ep['title']}（{ep['duration'] // 60} 分）")
     if DRYRUN:

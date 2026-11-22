@@ -33,6 +33,10 @@ jobs:
   digest:
     runs-on: ubuntu-latest
     timeout-minutes: 360
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1]   # 兩個 job 並行轉錄，待處理集數依長度平均分攤（見 digest.py 的 SHARD）
     steps:
       - uses: actions/checkout@v4
 
@@ -62,11 +66,36 @@ jobs:
           LIMIT: ${{ inputs.limit || '0' }}
           MAX_AGE_H: ${{ inputs.max_age_h || '36' }}
           TIME_BUDGET_MIN: '300'
+          SHARD: ${{ matrix.shard }}/2
         run: python digest.py
 
-      - name: 存已處理清單
+      - name: 上傳本分片的已處理清單
+        # digest.py 每完成一集就存一次，所以即使本 job 中途失敗，已完成的集數也會被記下
         if: always() && inputs.dryrun != true
+        uses: actions/upload-artifact@v4
+        with:
+          name: state-${{ matrix.shard }}
+          path: state/seen.json
+          if-no-files-found: ignore
+          retention-days: 3
+
+  finalize:
+    # 合併各分片的已處理清單並 commit。分片 job 失敗或被取消也要執行，才不會讓已寄出的集數隔天重轉。
+    needs: digest
+    if: always() && inputs.dryrun != true
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/download-artifact@v4
+        continue-on-error: true   # 兩個分片都沒產出 artifact 時不要讓整個 job 失敗；merge_state.py 會當作 0 份處理
+        with:
+          pattern: state-*
+          path: shard-state
+
+      - name: 合併並存已處理清單
         run: |
+          python3 merge_state.py state/seen.json shard-state
           git config user.name "podcast-digest-bot"
           git config user.email "actions@users.noreply.github.com"
           git add state/
