@@ -94,9 +94,6 @@
  },
  "聽天下": {
   "guids": [
-   "f106b68e-c1ef-433a-9920-623fcfa30991",
-   "b4b83324-874b-427f-8757-dedc472b676e",
-   "b7e230ec-1b4d-420e-af30-a349d4ca99af",
    "22f44482-58ca-4075-b2c0-119c764c26c8",
    "63522068-6962-4788-bcaa-fcfb6f66d714",
    "1bd0e673-69da-498d-ab43-3b7db1363324",
@@ -143,7 +140,10 @@
    "ce4ff636-4c9f-4d64-b60a-6d076021b529",
    "f3794594-6dbb-45c7-bd56-dbc09f47b290",
    "2bb83646-c343-4ee6-9433-559e5df34b72",
-   "7ca2aa19-7d93-46b9-addb-ed37aa80ee67"
+   "7ca2aa19-7d93-46b9-addb-ed37aa80ee67",
+   "832a4221-ade6-468b-b3f1-79efd9e963a0",
+   "d39c1a79-ccd4-4eba-b4ed-799e85635ec8",
+   "545a6905-48fd-4850-87e5-e9c6d130ec80"
   ]
  },
  "沈雲驄說財經": {
@@ -295,7 +295,8 @@
    "0c7a57a9-7006-4565-a2fc-7e388a7ba362",
    "e2709150-2e63-4efa-bc75-248b67f46f3c",
    "ec21dde9-5e04-4fe9-94a1-6d77e803292e",
-   "e2c1f0eb-8769-4e87-a693-d53cda6c4115"
+   "e2c1f0eb-8769-4e87-a693-d53cda6c4115",
+   "1b7fa62e-6acd-4bd9-9775-b4dd49cde7ff"
   ]
  },
  "The Daily": {
@@ -373,7 +374,8 @@
    "6afeca038f8ad2908f6bec2e",
    "6b0029dc322405712ca22bff",
    "6b041882eb893786ae9e232d",
-   "6b0570ccced26bb723ddd995"
+   "6b0570ccced26bb723ddd995",
+   "6b06bf53b6f9fb45eca7d2de"
   ]
  },
  "Money Talks": {
@@ -676,7 +678,9 @@
    "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261123-dtdailynews-1.mp3[Sun, 22 Nov 2026 22:00:00 +0000]",
    "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261123-dtdailynews-2.mp3[Mon, 23 Nov 2026 10:00:00 +0000]",
    "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261124-dtdailynews-1.mp3[Mon, 23 Nov 2026 22:00:00 +0000]",
-   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261124-dtdailynews-2.mp3[Tue, 24 Nov 2026 10:00:00 +0000]"
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261124-dtdailynews-2.mp3[Tue, 24 Nov 2026 10:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261125-dtdailynews-2.mp3[Wed, 25 Nov 2026 10:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261125-dtdailynews-1.mp3[Tue, 24 Nov 2026 22:00:00 +0000]"
   ]
  },
  "Tech666": {
@@ -696,7 +700,8 @@
    "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260819-yaotech-1.mp3[Tue, 18 Aug 2026 22:00:00 +0000]",
    "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260812-yaotech.mp3[Tue, 11 Aug 2026 22:00:00 +0000]",
    "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20260805-yaotech.mp3[Tue, 04 Aug 2026 22:00:00 +0000]",
-   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261118-yaotech.mp3[Tue, 17 Nov 2026 22:00:00 +0000]"
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261118-yaotech.mp3[Tue, 17 Nov 2026 22:00:00 +0000]",
+   "https://media.blubrry.com/ic975broadcast/ins.blubrry.com/ic975broadcast/icv-20261125-yaotech.mp3[Tue, 24 Nov 2026 22:00:00 +0000]"
   ]
  },
  "科技領航家": {
@@ -756,7 +761,8 @@
    "98737106-739a-431b-8874-43feb4fa7bf9",
    "04a0e19a-ce79-4a3d-b41c-510b301c0c7f",
    "3dbc9e4b-8658-4585-a60c-425d71c6eb89",
-   "b153c200-90b4-41fb-8ffd-870469465814"
+   "b153c200-90b4-41fb-8ffd-870469465814",
+   "ff21628a-4aca-4e1e-9a1c-92f79349e3a2"
   ]
  },
  "The Journal": {
@@ -776,7 +782,8 @@
    "ba9c719a-d83a-11f1-b172-dfa2557315e7",
    "f0ade79c-d7d0-11f1-a17e-17e8a1075b75",
    "3a87686a-e52e-11f1-b54f-3b9fc17986dc",
-   "9df7979e-e786-11f1-966d-d3e229e1a456"
+   "9df7979e-e786-11f1-966d-d3e229e1a456",
+   "44f331f8-e830-11f1-8e5f-935c48e3027e"
   ]
  },
  "吳淡如人生實用商學院": {
@@ -799,7 +806,8 @@
    "c6cf1ac9-ce5d-4660-83bf-54da9fce13e2",
    "ad8cad36-89e6-4bd2-914d-0b6c617bf199",
    "591cfda9-faab-4e46-b929-bab7268cecec",
-   "e6215b7b-1708-4693-9ff9-3212c3d4c139"
+   "e6215b7b-1708-4693-9ff9-3212c3d4c139",
+   "e0feab60-4123-4488-8c62-f42a04bc8c3f"
   ]
  }
 }
